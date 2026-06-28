@@ -25,7 +25,7 @@ const SaidVsReality = () => {
               They said
             </p>
             <blockquote className='font-archivo mt-6 text-2xl leading-snug font-bold text-white md:text-3xl'>
-              &quot;{featured.claim}&quot;
+              &ldquo;{featured.claim}&rdquo;
             </blockquote>
             {featured.claimSource && (
               <p className='mt-6 font-mono text-xs text-white/40'>
