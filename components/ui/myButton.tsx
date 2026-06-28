@@ -11,7 +11,7 @@ interface MyButtonProps {
 }
 
 const baseClasses =
-  'relative inline-flex items-center justify-center overflow-hidden rounded-lg border border-primary bg-primary px-7 py-2.5 font-semibold tracking-wide text-secondary-600 group hover:cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-secondary-600'
+  'relative inline-flex items-center justify-center overflow-hidden rounded-lg border border-primary bg-primary px-7 py-2.5 font-semibold tracking-wide text-secondary-600 group hover:cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-secondary-600 h-11'
 
 // Primary CTA. Reads as a solid amber chip; on hover the brand ink (#111827)
 // floods in from the corners and the label flips to white. Sharp-ish corners
