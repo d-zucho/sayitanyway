@@ -441,11 +441,11 @@ const FeaturedWork = () => {
           {/* Index */}
           <ul className='divide-y divide-black/10 border-y border-black/10'>
             {rest.map((a, i) => (
-              <li key={a.slug}>
+              <li key={a.slug} className='py-6 first:pt-0'>
                 <Reveal delay={0.05 * (i + 1)}>
                   <Link
                     href={articleHref(a)}
-                    className='group block py-6 first:pt-0'
+                    className='group block'
                   >
                     <Meta a={a} />
                     <h4 className='font-archivo mt-3 text-xl leading-snug font-bold tracking-tight md:text-2xl'>
