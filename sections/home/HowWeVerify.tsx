@@ -8,12 +8,12 @@ const steps = [
   {
     n: '01',
     title: 'The Claim',
-    body: 'We pull the exact statement — in the speaker&rsquo;s own words — and pin down where and when it was said.',
+    body: 'We pull the exact statement — in the speaker’s own words — and pin down where and when it was said.',
   },
   {
     n: '02',
     title: 'Investigate',
-    body: 'We go to primary sources: the bill, the dataset, the transcript. Not someone&rsquo;s summary of them.',
+    body: 'We go to primary sources: the bill, the dataset, the transcript. Not someone’s summary of them.',
   },
   {
     n: '03',
