@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header className='sticky top-0 z-50'>
       {/* Utility strip — quiet mono "dispatch desk" texture. */}
-      <div className='hidden border-b border-black/5 bg-black/5 md:block'>
+      <div className='hidden border-b border-black/5 bg-background md:block'>
         <MaxWidthWrapper>
           <div className='flex h-8 items-center justify-between font-mono text-[10.5px] uppercase tracking-[0.2em] text-foreground/50'>
             <span>Question Power · Verify Facts · Protect People</span>
@@ -46,9 +46,9 @@ const Header = () => {
       {/* Masthead bar. */}
       <div
         className={cn(
-          'bg--background dark:bg-secondary-600 transition-[box-shadow,border-color,background-color] duration-300',
+          'bg-background dark:bg-secondary-600 transition-[box-shadow,border-color,background-color] duration-300',
           scrolled
-            ? 'siaw-plate border-b border-white/10 supports-backdrop-filter:bg-secondary-600/85 supports-backdrop-filter:backdrop-blur-md'
+            ? 'siaw-plate border-b border-white/10 supports-backdrop-filter:bg-white/20 supports-backdrop-filter:backdrop-blur-md'
             : 'border-b border-transparent',
         )}
       >
@@ -118,11 +118,11 @@ const Header = () => {
                 href='/'
                 className='bg-transparent border border-black/20 text-sm'
               >
-                Support
+                Sign In
               </MyButton>
-              <MyButton href='/' className=''>
+              <Link href='/' className={cn(buttonVariants(), 'h-11 px-7')}>
                 Support
-              </MyButton>
+              </Link>
             </div>
 
             <div className='lg:hidden'>

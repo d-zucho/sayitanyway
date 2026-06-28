@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Archivo, Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import Header from '@/sections/Header'
+import { SiteFooter } from '@/sections/Footer'
 
 const archivo = Archivo({
   variable: '--font-archivo',
@@ -38,6 +39,7 @@ export default function RootLayout({
         <Header />
         {/* <SiteNav /> */}
         {children}
+        <SiteFooter />
       </body>
     </html>
   )
