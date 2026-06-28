@@ -10,7 +10,7 @@ const Newsletter = () => {
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (!email) return
     // TODO: wire provider (e.g. POST to a /api/subscribe route or ESP).
@@ -52,6 +52,7 @@ const Newsletter = () => {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  name='email'
                   placeholder='you@email.com'
                   className='h-12 flex-1 border border-white/20 bg-white/5 px-4 text-white placeholder:text-white/35 focus:border-primary focus:outline-none'
                 />

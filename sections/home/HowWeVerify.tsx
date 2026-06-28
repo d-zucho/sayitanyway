@@ -45,8 +45,8 @@ const HowWeVerify = () => {
 
         <ol className='mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8'>
           {steps.map((s, i) => (
-            <Reveal key={s.n} delay={0.08 * i}>
-              <li className='border-t-2 border-black/10 pt-5'>
+            <li key={s.n} className='border-t-2 border-black/10 pt-5'>
+              <Reveal delay={0.08 * i}>
                 <span className='text-accent font-mono text-sm font-medium'>
                   {s.n}
                 </span>
@@ -54,8 +54,8 @@ const HowWeVerify = () => {
                   {s.title}
                 </h3>
                 <p className='text-text mt-3 leading-relaxed'>{s.body}</p>
-              </li>
-            </Reveal>
+              </Reveal>
+            </li>
           ))}
         </ol>
       </MaxWidthWrapper>
