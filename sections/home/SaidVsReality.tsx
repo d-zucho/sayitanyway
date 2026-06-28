@@ -1,14 +1,14 @@
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import TextHighlighter from '@/components/TextHighlighter'
-import { articles, formatDate } from '@/lib/placeholder/articles'
+import { featuredFactCheck, formatDate } from '@/lib/placeholder/articles'
 import { VERDICT_CHIP, VERDICT_LABEL } from '@/lib/placeholder/verdict'
 import { cn } from '@/lib/utils'
 
-// The brand's signature "They Said / Reality" format, rendered from the first
-// fact-check in the dataset. `claim` is the "They Said"; `excerpt`
+// The brand's signature "They Said / Reality" format, rendered from the
+// spotlighted fact-check. `claim` is the "They Said"; `excerpt`
 // (verdictSummary) + `verdict` is the "Reality".
 const SaidVsReality = () => {
-  const featured = articles.find((a) => a._type === 'factCheck' && a.verdict)
+  const featured = featuredFactCheck
   if (!featured || !featured.verdict) return null
 
   return (

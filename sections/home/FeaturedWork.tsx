@@ -1,7 +1,7 @@
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import { Reveal } from '@/components/Reveal'
 import {
-  articles,
+  restArticles,
   articleHref,
   categoryLabel,
   formatDate,
@@ -35,7 +35,7 @@ const Meta = ({ a }: { a: PlaceholderArticle }) => (
 
 // Curated proof: one lead story plus a hairline-ruled index of the rest.
 const FeaturedWork = () => {
-  const [lead, ...rest] = articles
+  const [lead, ...rest] = restArticles
 
   return (
     <section id='latest' className='py-24'>
@@ -57,9 +57,9 @@ const FeaturedWork = () => {
           <Reveal>
             <Link href={articleHref(lead)} className='group block'>
               <Meta a={lead} />
-              <h3 className='font-archivo mt-4 text-3xl leading-tight font-bold tracking-tight md:text-4xl'>
+              <h2 className='font-archivo mt-4 text-3xl leading-tight font-bold tracking-tight md:text-4xl'>
                 <span className='siaw-underline'>{lead.title}</span>
-              </h3>
+              </h2>
               <p className='text-text mt-4 max-w-prose leading-relaxed'>
                 {lead.excerpt}
               </p>
@@ -80,9 +80,9 @@ const FeaturedWork = () => {
                     className='group block'
                   >
                     <Meta a={a} />
-                    <h4 className='font-archivo mt-3 text-xl leading-snug font-bold tracking-tight md:text-2xl'>
+                    <h3 className='font-archivo mt-3 text-xl leading-snug font-bold tracking-tight md:text-2xl'>
                       <span className='siaw-underline'>{a.title}</span>
-                    </h4>
+                    </h3>
                   </Link>
                 </Reveal>
               </li>

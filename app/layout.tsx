@@ -36,6 +36,7 @@ export default function RootLayout({
       className={`${archivo.variable} ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className='min-h-dvh'>
+        <div className='siaw-grain' aria-hidden />
         <Header />
         {/* <SiteNav /> */}
         {children}

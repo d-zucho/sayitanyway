@@ -77,6 +77,15 @@ export const articles: PlaceholderArticle[] = [
   },
 ]
 
+// The fact-check spotlighted in the SaidVsReality showcase. Exported so other
+// sections can avoid repeating it: FeaturedWork lists `restArticles` instead.
+export const featuredFactCheck = articles.find(
+  (a) => a._type === 'factCheck' && a.verdict,
+)
+
+// Everything except the spotlighted fact-check, for listing sections.
+export const restArticles = articles.filter((a) => a !== featuredFactCheck)
+
 export const categoryLabel = (type: PlaceholderArticle['_type']): string =>
   type === 'factCheck' ? 'Fact Check' : 'Opinion'
 

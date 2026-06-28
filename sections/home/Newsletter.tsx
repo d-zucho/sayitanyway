@@ -21,7 +21,6 @@ const Newsletter = () => {
     <section id='subscribe' className='py-24'>
       <MaxWidthWrapper>
         <div className='siaw-plate bg-secondary-600 relative overflow-hidden px-6 py-16 md:px-16 md:py-20'>
-          <div className='siaw-grain' />
           <div className='relative'>
             <p className='font-mono text-sm font-medium tracking-[0.2em] text-white/50 uppercase'>
               No spin. No spam.
