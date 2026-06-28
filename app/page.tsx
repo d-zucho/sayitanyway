@@ -4,6 +4,7 @@ import SaidVsReality from '@/sections/home/SaidVsReality'
 import FeaturedWork from '@/sections/home/FeaturedWork'
 import HowWeVerify from '@/sections/home/HowWeVerify'
 import WhatWeCover from '@/sections/home/WhatWeCover'
+import Newsletter from '@/sections/home/Newsletter'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <FeaturedWork />
       <HowWeVerify />
       <WhatWeCover />
+      <Newsletter />
     </div>
   )
 }
