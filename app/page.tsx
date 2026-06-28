@@ -3,6 +3,7 @@ import Manifesto from '@/sections/home/Manifesto'
 import SaidVsReality from '@/sections/home/SaidVsReality'
 import FeaturedWork from '@/sections/home/FeaturedWork'
 import HowWeVerify from '@/sections/home/HowWeVerify'
+import WhatWeCover from '@/sections/home/WhatWeCover'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <SaidVsReality />
       <FeaturedWork />
       <HowWeVerify />
+      <WhatWeCover />
     </div>
   )
 }
