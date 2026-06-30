@@ -35,7 +35,7 @@ const SaidVsReality = () => {
           </div>
 
           {/* Reality */}
-          <div className='bg-secondary-600/[0.04] p-8 md:p-12'>
+          <div className='bg-secondary-600/4 p-8 md:p-12'>
             <div className='flex items-center gap-3'>
               <p className='font-mono text-xs tracking-[0.18em] text-black/50 uppercase'>
                 Reality

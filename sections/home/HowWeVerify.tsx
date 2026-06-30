@@ -29,7 +29,7 @@ const steps = [
 
 const HowWeVerify = () => {
   return (
-    <section id='method' className='bg-secondary-600/[0.04] py-24'>
+    <section id='method' className='bg-secondary-600/4 py-24'>
       <MaxWidthWrapper>
         <p className='text-muted-foreground font-mono text-sm font-medium tracking-[0.2em] uppercase'>
           The method
